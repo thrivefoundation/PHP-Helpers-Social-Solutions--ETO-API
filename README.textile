@@ -24,3 +24,7 @@ Also worth noting is that some of this code could definitely be improved. The im
 h2. The How
 
 Fork the code. Review the code. Customize the code for your needs. Please feel free to contribute back any improvements you make.
+
+h2. The License
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>, and is copyright the Thrive Foundation for Youth.
