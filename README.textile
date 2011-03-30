@@ -1,0 +1,26 @@
+h1. PHP Examples and Helpers for Social Solutions' ETO API
+
+h2. The Why
+
+In building "StepItUp2Thrive":http://www.stepitup2thrive.org/ we learned a great deal about the ins and outs of the ETO API. We at the "Thrive Foundation for Youth":http://thrivefoundation.org/ wanted to share some of our code to help others. While we can't promise any of this code is perfect, we can at least offer it as a good way to get started.
+
+If you'd like assistance with this you can contact "Brett":https://github.com/themancan or "Ian":https://github.com/ianesque to discuss commercial support and custom integrations.
+
+h2. The What
+
+This code contains a very basic PHP microframework with views and controllers. It is built for an Apache setup with @mod_rewrite@, but could easily be adapted to other servers if you change up the rewrite rules. It is bare bones and without styling, and is intended to be used as the start of your own custom ETO integration. It is _not_ a turnkey solution, and it _does_ require knowledge of PHP as well as thorough testing (and likely a patient contact at SS to help you work through bugs you find).
+
+Important warnings:
+* This code assumes it will live in @/api/@ at the webroot, so @http://example.com/api/@. If you change that you'll need to update the dispatch and @.htaccess@ files, and perhaps others.
+* There is an ETO API method called @GetAllAssessmentsThriveResult@. This method returns more assessments than the normal call. You may want to check with SS to see if you need to use this call. (If in doubt, try both and see which call returns the assessments you're looking for.)
+* There are some hardcoded web-root relative paths that may throw errors. You'll want to make sure you have errors showing up while working on this, or tail the error logs.
+* There are _lots_ of debugging statements that are commented out. There are also different ways to trigger debugging output.
+* There are some variables that need to be replaced. Do a search on all the files in the repo for "example" and replace as needed.
+
+Also worth noting is that some of this code could definitely be improved. The important thing is that it does actually work in a production environment.
+
+
+
+h2. The How
+
+Fork the code. Review the code. Customize the code for your needs. Please feel free to contribute back any improvements you make.

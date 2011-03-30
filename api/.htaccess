@@ -1,0 +1,14 @@
+DirectoryIndex dispatch.php
+
+RewriteEngine On
+RewriteBase /api/
+
+
+# #################################################
+# THRIVE + ETO:
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_URI} ^/([A-Za-z_]{1,15})/
+RewriteRule ^([A-Za-z]{1,15})(/([A-Za-z]{1,25}))?(/([0-9A-Za-z-_/]*))? /api/dispatch.php?controller=$1&action=$3&arguments=$5&%{QUERY_STRING} [NC,L]
